@@ -1,0 +1,42 @@
+/* Navbar.css */
+
+nav {
+      position: absolute;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* background-color:#7af6fa; */
+  margin: 10px;
+}
+
+.brand {
+  margin: 0;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  font-family: cursive;
+  color: #333;
+}
+
+a:hover {
+  color: #868585;
+}
