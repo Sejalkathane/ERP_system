@@ -1,37 +1,34 @@
+// Navbar.js
 import React from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <>
+    <div>
       <nav>
         <div>
           <h3 className="brand">ERP</h3>
         </div>
-        <div>
-          <ul>
-            <li>
-              <a href="/">Dashboard</a>
-            </li>
-            <li>
-              <a href="/products">Products</a>
-            </li>
-            <li>
-              <a href="/orders">Orders</a>
-            </li>
-            <li>
-              <a href="/about">About US</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-            <li>
-              <a href="/signin">Sign in</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/products">Products</Link>
+          </li>
+          <li>
+            <Link to="/order">Orders</Link>
+          </li>
+          <li>
+            <Link to="/aboutus">Aboutus</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
       </nav>
-    </>
+    </div>
   );
 };
 

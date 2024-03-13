@@ -1,18 +1,45 @@
 /* Footer.css */
 
+
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    bottom: 0px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    position:fixed;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .footer-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add {
+  width: 50%;
 }
 
 .footer-bottom {
   margin-top: 20px;
+}
+
+.image img {
+  background-color: rgb(205, 205, 205);
+  width: 4%;
+  height: 4%;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+}
+
+.menu {
+  margin: auto;
+}
+.menu li {
+  list-style: none;
+  display: flex;
 }
