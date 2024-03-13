@@ -1,9 +1,7 @@
-.page-cont {
-  background-color: rgb(255, 51, 51);
-   width: 1485px;
-   height: 630px;
-   position: absolute;
-   margin:auto;
-   margin-top: 4px;
-   
+.main{
+    background-color: rgb(254, 183, 183);
+    width :100%;
+    height: 600px;
+    /* position: fixed;
+    margin: auto; */
 }

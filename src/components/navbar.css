@@ -1,46 +1,47 @@
-/* Navbar.css */
+
 
 nav {
 
-  color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  background-color: #dffff7;
-  /* margin: 10px; */
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.brand {
-  margin: 0;
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-li {
-  margin-right: 20px;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  font-size: 20px;
-  font-family: cursive;
-  color: #333;
-}
-
-a:hover {
-  color: #868585;
-}
+    color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #dffff7; */
+    /* margin: 10px; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* position: relative; */
+  }
+  
+  .brand {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    font-family: cursive;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #868585;
+  }
+  

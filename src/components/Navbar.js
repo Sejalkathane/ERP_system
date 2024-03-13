@@ -1,3 +1,5 @@
+ 
+
 // Navbar.js
 import React from "react";
 import "./navbar.css";
@@ -5,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="nav-cont">
       <nav>
         <div>
           <h3 className="brand">ERP</h3>

@@ -1,0 +1,7 @@
+body{
+   background-image: radial-gradient(rgb(190, 252, 252), rgb(160, 255, 222));
+   background-repeat: no-repeat; /* Make sure the gradient doesn't repeat */
+   background-position:right;
+   height: 100%;
+   width:100%;
+}
