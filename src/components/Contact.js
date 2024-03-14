@@ -1,16 +1,16 @@
-// ProductList.js
-import React from 'react';
-import { useSelector } from 'react-redux';
-import Navbar from './Navbar';
+// Contact.js
+import React from "react";
+import { useSelector } from "react-redux";
+import Navbar from "./Navbar";
 
-const ProductList = () => {
-  // Access products state from Redux store
+const Contact = () => {
+  // Access product state from Redux store
   const products = useSelector(state => state.products);
 
   return (
-    <div>
-      <Navbar/>
-      <h2>Product List</h2>
+    <>
+      <Navbar />
+      <h1>Product List</h1>
       <ul>
         {products.map(product => (
           <li key={product.id}>
@@ -21,8 +21,8 @@ const ProductList = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 
-export default ProductList;
+export default Contact;

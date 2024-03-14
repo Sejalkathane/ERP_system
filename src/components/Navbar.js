@@ -6,6 +6,7 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  
   return (
     <div className="nav-cont">
       <nav>
@@ -14,7 +15,7 @@ const Navbar = () => {
         </div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" >Home</Link>
           </li>
           <li>
             <Link to="/products">Products</Link>

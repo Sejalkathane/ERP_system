@@ -7,15 +7,15 @@ import Dashboard from "./components/Dashboard";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 
-import { useEffect } from "react";
-import { useDispatch, Provider } from "react-redux";
-import { fetchProducts } from "./components/Action"; // Assuming you have an action to fetch products
 import store from "./Store";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
+    
     path: "/",
     element: <Dashboard />,
+    exact:true,
   },
   {
     path: "/products",
@@ -36,13 +36,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Fetch product data when the application starts
-    dispatch(fetchProducts());
-  }, [dispatch]);
-
   return (
     <>
       <Provider store={store}>
