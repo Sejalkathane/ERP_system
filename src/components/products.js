@@ -8,7 +8,7 @@ const Product = () => {
   const dispatch = useDispatch(); // Initialize useDispatch hook
 
   // Retrieve product data from Redux store
-  const products = useSelector((state) => state.products);
+  const products = useSelector((state) => state.products.products);
 
   // Local state for managing form inputs
   const [productName, setProductName] = useState("");
@@ -104,12 +104,16 @@ const Product = () => {
         onChange={(e) => setProductName(e.target.value)}
       />
       <br />
-      <input
-        type="text"
-        placeholder="Category"
+      <select
         value={productCategory}
         onChange={(e) => setProductCategory(e.target.value)}
-      />
+      >
+        <option value="">Select Category</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Cloth">Cloth</option>
+        <option value="Shoes">Shoes</option>
+        <option value="Other">Other</option>
+      </select>
       <br />
       <input
         type="number"

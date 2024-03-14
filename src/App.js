@@ -4,7 +4,7 @@ import "./App.css";
 import Products from "./components/Products";
 import Order from "./components/Order";
 import Dashboard from "./components/Dashboard";
-import AboutUs from "./components/AboutUs";
+import AboutUs from "./components/OrderCalender";
 import Contact from "./components/Contact";
 
 import store from "./Store";

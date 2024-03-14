@@ -1,9 +1,14 @@
-import {configureStore} from "@reduxjs/toolkit";
-import rootReducer from "./components/Reducer"
+// // store.js
 
-const store =configureStore({
-    reducer:rootReducer,
-  });
-  
+import { configureStore } from "@reduxjs/toolkit";
+import rootReducer from "./components/Reducer";
+import rootReducerOrder from "./components/Reducerfol/OrderReducer";
 
-export default store
+const store = configureStore({
+  reducer: {
+    products: rootReducer,
+    orders: rootReducerOrder,
+  },
+});
+
+export default store;

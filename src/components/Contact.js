@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const Contact = () => {
   // Access product state from Redux store
-  const products = useSelector(state => state.products);
+  const products = useSelector(state => state.products.products);
 
   return (
     <>
