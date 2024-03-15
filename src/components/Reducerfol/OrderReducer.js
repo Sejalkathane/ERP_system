@@ -1,14 +1,8 @@
-// reducers/orderReducer.js
-
 import { ADD_ORDER, EDIT_ORDER, DELETE_ORDER } from '../Actionfol/OrderAction';
+import ordersInitialState from '../Order/OrderInitialstate'; // Import initial state
 
 const initialState = {
-  orders: [
-    { id: 1, customerName: 'John Doe', orderDate: '2024-01-01', status: 'Pending' },
-    { id: 2, customerName: 'Jane Smith', orderDate: '2024-01-02', status: 'Shipped' },
-    { id: 3, customerName: 'Alice Johnson', orderDate: '2024-01-03', status: 'Completed' },
-
-  ],
+  orders: ordersInitialState,
 };
 
 const orderReducer = (state = initialState, action) => {

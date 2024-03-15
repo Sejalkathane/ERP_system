@@ -1,0 +1,11 @@
+.para{
+    background-color: rgb(99, 209, 239);
+
+}
+
+.main_tx{
+    text-align: center;
+    padding: 5%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}

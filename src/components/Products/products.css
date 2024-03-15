@@ -1,0 +1,57 @@
+/* AddProductForm.css */
+.form-container {
+  width: 70%;
+  max-width: 500px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Apply box shadow */
+   margin-top: 20px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-box {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Apply box shadow to input */
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.update-button {
+  background-color: #28a745; /* Update button color */
+}
+
+.add-button {
+  background-color: #007bff; /* Add button color */
+}
+
+.pro_list_name{
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+

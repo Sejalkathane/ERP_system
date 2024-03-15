@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import "./App.css";
-import Products from "./components/Products";
-import Order from "./components/Order";
+import Products from "./components/Products/Products";
+import Order from "./components/Order/Order";
 import Dashboard from "./components/Dashboard";
-import AboutUs from "./components/OrderCalender";
+import Cal from "./components/Order/OrderCalender";
 import Contact from "./components/Contact";
 
 import store from "./Store";
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
     element: <Order />,
   },
   {
-    path: "/aboutus",
-    element: <AboutUs />,
+    path: "/cal",
+    element: <Cal />,
   },
   {
     path: "/contact",
@@ -46,3 +46,14 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+

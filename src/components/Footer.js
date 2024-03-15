@@ -6,16 +6,35 @@ import goo from "./img/google.png";
 import facebook from "./img/facebook.png";
 import linkdein from "./img/linkedin.png";
 import twit from "./img/twitter.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-cont">
         <div className="menu">
-          <h6>Main Feature</h6>
-          <div>
-            <li>Products</li>
-            <li>Orders</li>
+          <h4>Main Feature</h4>
+          <div className="menu_li">
+            <div className="list">
+              <Link to="/products" className="my_footer_link">
+                Products
+              </Link>
+              <Link to="/order" className="my_footer_link">
+                Orders
+              </Link>
+              <Link to="/" className="my_footer_link">
+                Dynamic data
+              </Link>
+            </div>
+            <div className="list">
+              <Link to="/cal" className="my_footer_link">
+                Calendar
+              </Link>
+
+              <Link to="/contact" className="my_footer_link">
+                Support
+              </Link>
+            </div>
           </div>
         </div>
         <div className="add">

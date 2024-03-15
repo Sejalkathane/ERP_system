@@ -1,0 +1,73 @@
+.calendar-container{
+  padding: 20px;
+  margin: 20px;
+}
+
+.react-calendar__month-view__days__day--weekend,
+.react-calendar__month-view__days__day--weekend:disabled,
+.react-calendar__month-view__days__day--weekend:enabled:active {
+  color: brown; /* Set the color of weekend dates to brown */
+}
+
+.react-calendar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  width: 50%; 
+  padding: 20px;
+  font-size: 30px;
+}
+
+.react-calendar__navigation button {
+  color: black;
+}
+
+/* Set the color of the top heading to black */
+.react-calendar__navigation__label__labelText {
+  color: black;
+}
+
+.react-calendar__month-view__days__day {
+  width: calc(100% / 7); /* Set the width of each day cell */
+  height: calc(100% / 6); /* Set the height of each day cell */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+
+.custom-calendar {
+  width: 100%;
+  /* color: brown; */
+}
+
+.order-date {
+  background-color: rgb(255, 146, 146) !important;
+  color: black !important;
+  border-radius: 50%;
+}
+
+.today {
+  background-color: rgb(255, 255, 125) !important;
+  /* border-radius: 20%; */
+}
+
+.orders-for-date {
+  margin-top: 20px;
+}
+
+.orders-for-date h3 {
+  margin-bottom: 10px;
+}
+
+.orders-for-date ul {
+  list-style: none;
+  padding: 0;
+}
+
+.orders-for-date li {
+  margin-bottom: 10px;
+}

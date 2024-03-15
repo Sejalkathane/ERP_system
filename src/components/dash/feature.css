@@ -1,0 +1,40 @@
+.Main-feature{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-feature{
+    text-align: center;
+    padding: 2%;
+    font-size: 50px;
+    text-shadow: 1px 1px rgb(0, 162, 255);
+    color: rgb(8, 17, 60);
+}
+
+.featurebox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.fea{
+    width: 200px;
+    height: 250px;
+    /* background-color: red; */
+    align-items: center;
+    text-align: center;
+}
+.fea_img
+{
+    width: 120px;
+    height: 120px;
+}
+
+.name{
+    padding: 20px;
+    font-size: 23px;
+    font-weight: bold;
+}

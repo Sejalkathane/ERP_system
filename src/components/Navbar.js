@@ -15,19 +15,19 @@ const Navbar = () => {
         </div>
         <ul>
           <li>
-            <Link to="/" >Home</Link>
+            <Link to="/"   className="nav_link">Home</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/products" className="nav_link">Products</Link>
           </li>
           <li>
-            <Link to="/order">Orders</Link>
+            <Link to="/order" className="nav_link">Orders</Link>
           </li>
           <li>
-            <Link to="/aboutus">Aboutus</Link>
+            <Link to="/cal" className="nav_link">Calendar</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" className="nav_link">Contact</Link>
           </li>
         </ul>
       </nav>

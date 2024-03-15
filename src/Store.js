@@ -1,7 +1,7 @@
 // // store.js
 
 import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "./components/Reducer";
+import rootReducer from "./components/Reducerfol/ProReducer";
 import rootReducerOrder from "./components/Reducerfol/OrderReducer";
 
 const store = configureStore({

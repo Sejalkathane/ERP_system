@@ -1,19 +1,16 @@
 
 
 nav {
-
-    color: #333;
-    padding: 10px;
-    display: flex;
+  background: rgb(2,0,39);
+  background: linear-gradient(90deg, rgba(2,0,39,1) 0%, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 1%, rgba(3,96,115,1) 100%);
+    color:white;
+    font-family: 'Nunito Sans', sans-serif; 
+    font-weight: 400;
+    padding:20px;
+    height:10vh;
+    display:flex;
+    font-size:120%;
     justify-content: space-around;
-    align-items: center;
-    /* background-color: #dffff7; */
-    /* margin: 10px; */
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* position: relative; */
   }
   
   .brand {
@@ -29,19 +26,25 @@ nav {
   }
   
   li {
-    margin-right: 20px;
+    display:flex;
+    flex-direction:row;
+    cursor: pointer;
+    align-items: right;  }
+  
+   .nav_link {
+    margin-right:15px;
+  margin-left:15px;
+  border-bottom:2px solid white;
+  border-bottom: hidden;
+  color:white;
+  font-size: 23px;
   }
   
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 20px;
-    font-family: cursive;
-    color: #333;
-  }
-  
-  a:hover {
-    color: #868585;
+  .nav_link:hover {
+    color: #ffffff;
+    /* border-bottom:2px solid white; */
+    text-decoration: underline 2px solid white;
+    text-shadow: 1px 1px 2px  white;
+
   }
   

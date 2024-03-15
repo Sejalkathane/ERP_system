@@ -1,8 +1,11 @@
 // Product.js
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct, editProduct, deleteProduct } from "./Action";
-import Navbar from "./Navbar";
+import { addProduct, editProduct, deleteProduct } from "../Actionfol/ProAction";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import ProdCard from "./ProdCard";
+import  "./products.css"
 
 const Product = () => {
   const dispatch = useDispatch(); // Initialize useDispatch hook
@@ -26,7 +29,7 @@ const Product = () => {
         name: productName,
         category: productCategory,
         price: parseFloat(productPrice),
-        stock: parseInt(productStock)
+        stock: parseInt(productStock),
       })
     );
     // Clear form inputs
@@ -59,7 +62,7 @@ const Product = () => {
         name: productName,
         category: productCategory,
         price: parseFloat(productPrice),
-        stock: parseInt(productStock)
+        stock: parseInt(productStock),
       })
     );
     // Clear form inputs
@@ -79,34 +82,20 @@ const Product = () => {
   return (
     <div>
       <Navbar />
-      <h1>Product List</h1>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            <strong>Name:</strong> {product.name}
-            <br />
-            <strong>Category:</strong> {product.category}
-            <br />
-            <strong>Price:</strong> ${product.price}
-            <br />
-            <strong>Stock:</strong> {product.stock}
-            <br />
-            <button onClick={() => handleEditProduct(product.id)}>Edit</button>
-            <button onClick={() => handleDeleteProduct(product.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
+      <div className="form-container">
       <h2>{editProductId ? "Edit Product" : "Add Product"}</h2>
       <input
         type="text"
         placeholder="Name"
         value={productName}
         onChange={(e) => setProductName(e.target.value)}
+        className="input-box"
       />
       <br />
       <select
         value={productCategory}
         onChange={(e) => setProductCategory(e.target.value)}
+        className="input-box"
       >
         <option value="">Select Category</option>
         <option value="Electronics">Electronics</option>
@@ -120,6 +109,7 @@ const Product = () => {
         placeholder="Price"
         value={productPrice}
         onChange={(e) => setProductPrice(e.target.value)}
+        className="input-box"
       />
       <br />
       <input
@@ -127,15 +117,44 @@ const Product = () => {
         placeholder="Stock"
         value={productStock}
         onChange={(e) => setProductStock(e.target.value)}
+        className="input-box"
       />
       <br />
       {editProductId ? (
-        <button onClick={handleUpdateProduct}>Update Product</button>
+        <button className="update-button" onClick={handleUpdateProduct}>Update Product</button>
       ) : (
-        <button onClick={handleAddProduct}>Add Product</button>
+        <button className="add-button" onClick={handleAddProduct}>Add Product</button>
       )}
+    </div>
+      <div>
+        <h1 className="pro_list_name">Product List</h1>
+        <ProdCard
+          products={products}
+          onEdit={handleEditProduct}
+          onDelete={handleDeleteProduct}
+        />
+      </div>
+
+      <Footer />
     </div>
   );
 };
 
 export default Product;
+
+// {/* <ul>
+//         {products.map((product) => (
+//           <li key={product.id}>
+//             <strong>Name:</strong> {product.name}
+//             <br />
+//             <strong>Category:</strong> {product.category}
+//             <br />
+//             <strong>Price:</strong> ${product.price}
+//             <br />
+//             <strong>Stock:</strong> {product.stock}
+//             <br />
+//             <button onClick={() => handleEditProduct(product.id)}>Edit</button>
+//             <button onClick={() => handleDeleteProduct(product.id)}>Delete</button>
+//           </li>
+//         ))}
+//       </ul> */}

@@ -1,0 +1,74 @@
+.chart_main_div {
+  padding: 4%;
+  /* box-shadow: inset 2px 2px 10px 2px rgb(154, 251, 241); */
+
+  
+}
+.char1_txt {
+  text-align: center;
+  font-size: 35px;
+  width: 50%;
+  text-shadow: 2px 2px rgb(220, 219, 219);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px 2px rgb(138, 212, 255);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 2px;
+}
+.chart1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4%;
+}
+
+.data {
+  /* background-color: red; */
+  width: 50%;
+  height: 430px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px #dbdbdb;
+}
+
+.real_chart {
+  /* background-color: rgb(255, 159, 159); */
+  width: 50%;
+  /* height: 400px; */
+}
+
+.products-table-container {
+  margin: 30px;
+}
+
+.table-container {
+  max-height: 80%; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+
+th {
+  background-color: #c7f6f7;
+}
+
+/* Optional: Add hover effect */
+tr:hover {
+  background-color: #e3fefe;
+}
