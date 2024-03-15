@@ -141,20 +141,3 @@ const Product = () => {
 };
 
 export default Product;
-
-// {/* <ul>
-//         {products.map((product) => (
-//           <li key={product.id}>
-//             <strong>Name:</strong> {product.name}
-//             <br />
-//             <strong>Category:</strong> {product.category}
-//             <br />
-//             <strong>Price:</strong> ${product.price}
-//             <br />
-//             <strong>Stock:</strong> {product.stock}
-//             <br />
-//             <button onClick={() => handleEditProduct(product.id)}>Edit</button>
-//             <button onClick={() => handleDeleteProduct(product.id)}>Delete</button>
-//           </li>
-//         ))}
-//       </ul> */}

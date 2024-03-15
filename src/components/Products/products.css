@@ -1,13 +1,13 @@
 /* AddProductForm.css */
 .form-container {
-  width: 70%;
-  max-width: 500px; /* Adjust max-width as needed */
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 500px; /* Maximum width of the form */
   margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Apply box shadow */
-   margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .form-container h2 {
@@ -17,12 +17,12 @@
 }
 
 .input-box {
-  width: calc(100% - 20px); /* Adjust width to account for padding */
+  width: calc(100% - 20px); /* Adjusted width to account for padding */
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Apply box shadow to input */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
@@ -41,11 +41,11 @@ button:hover {
 }
 
 .update-button {
-  background-color: #28a745; /* Update button color */
+  background-color: #28a745;
 }
 
 .add-button {
-  background-color: #007bff; /* Add button color */
+  background-color: #007bff;
 }
 
 .pro_list_name{
@@ -54,4 +54,20 @@ button:hover {
   margin-top: 20px;
 }
 
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input-box {
+    width: calc(100% - 20px);
+  }
+}

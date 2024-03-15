@@ -1,11 +1,17 @@
-.para{
+.para {
     background-color: rgb(99, 209, 239);
-
 }
 
-.main_tx{
+.main_tx {
     text-align: center;
     padding: 5%;
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+
+/* Media query for mobile devices (480px) */
+@media only screen and (max-width: 480px) {
+    .main_tx {
+        padding: 2%;
+    }
 }

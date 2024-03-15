@@ -17,7 +17,8 @@
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 70%; /* Adjusted width for responsiveness */
+  max-width: 500px; /* Max width for larger screens */
   box-shadow: 1px 1px 5px 2px rgb(255, 255, 255);
   border: none;
 }
@@ -34,4 +35,11 @@
   color: rgb(123, 122, 122);
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
 }

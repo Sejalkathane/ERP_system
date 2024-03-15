@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import Barchart from "../Order/RevenueChart";
 import "./orderstatuschart.css";
 
-const App = () => {
+const Revenue = () => {
   const orders = useSelector((state) => state.orders.orders);
 
   const categoryRevenue = orders.reduce((acc, order) => {
@@ -56,4 +56,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Revenue;

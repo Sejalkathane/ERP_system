@@ -1,54 +1,67 @@
 /* ProductCard.css */
 .card_data {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next row */
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  min-width: 250px; /* Minimum width of the card */
+  width: calc(50% - 20px); /* Adjust width for 2 cards per row with margin */
+  max-width: 300px; /* Maximum width of the card */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.product-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 0 5px; /* Adjusted margin */
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
   .product-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    min-width: 300px; /* Minimum width of the card */
-    width: calc(25% - 20px); /* Adjust width for 4 cards per row with margin */
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    width: calc(50% - 20px); /* Adjusted width for 2 cards per row with margin */
   }
-  
-  .product-card h3 {
-    margin-top: 0;
-    font-size: 18px;
-    color: #333;
+
+  @media screen and (max-width: 480px) {
+    .product-card {
+      width: calc(100% - 20px); /* Adjusted width for 1 card per row with margin */
+    }
   }
-  
-  .product-card p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content:space-around;
-    margin-top: 10px;
-  }
-  
-  .edit-button,
-  .delete-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .edit-button:hover,
-  .delete-button:hover {
-    background-color: #0056b3;
-  }
-  
+}

@@ -53,7 +53,7 @@ function DataAnalysis() {
 
       <div className="card_show">
         <p>Total Expences</p>
-        <h3>{totalPrice}</h3>
+        <h3>Rs.{totalPrice}</h3>
       </div>
       <div className="card_show">
         <p>Average Rating</p>

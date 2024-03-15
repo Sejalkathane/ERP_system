@@ -1,13 +1,11 @@
 .chart_main_div {
   padding: 4%;
-  /* box-shadow: inset 2px 2px 10px 2px rgb(154, 251, 241); */
-
-  
 }
+
 .char1_txt {
   text-align: center;
   font-size: 35px;
-  width: 50%;
+  width: 80%; /* Adjusted width for responsiveness */
   text-shadow: 2px 2px rgb(220, 219, 219);
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 10px 2px rgb(138, 212, 255);
@@ -17,6 +15,7 @@
   border-radius: 20px;
   padding: 2px;
 }
+
 .chart1 {
   display: flex;
   flex-direction: row;
@@ -25,8 +24,8 @@
 }
 
 .data {
-  /* background-color: red; */
-  width: 50%;
+  width: 80%; /* Adjusted width for responsiveness */
+  max-width: 500px; /* Max width for larger screens */
   height: 430px;
   align-items: center;
   text-align: center;
@@ -37,9 +36,7 @@
 }
 
 .real_chart {
-  /* background-color: rgb(255, 159, 159); */
-  width: 50%;
-  /* height: 400px; */
+  width: 100%; /* Adjusted width for responsiveness */
 }
 
 .products-table-container {
@@ -49,10 +46,11 @@
 .table-container {
   max-height: 80%; /* Adjust as needed */
   overflow-y: auto;
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
 }
 
 table {
-  width: 100%;
+  width: 100%; /* Ensure table takes full width */
   border-collapse: collapse;
 }
 
@@ -62,13 +60,40 @@ td {
   text-align: center;
   border-bottom: 1px solid #ddd;
   font-size: 20px;
+  white-space: nowrap; /* Prevent line breaks in table cells */
 }
 
 th {
   background-color: #c7f6f7;
 }
 
-/* Optional: Add hover effect */
 tr:hover {
   background-color: #e3fefe;
+}
+
+/* Media query for responsiveness */
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .char1_txt {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .chart1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .data {
+    width: 90%;
+    height: auto;
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto; /* Add scrollbar */
+  }
+
+  /* Wrap extra data in table cells */
+  td {
+    word-wrap: break-word;
+    white-space: normal;
+  }
 }

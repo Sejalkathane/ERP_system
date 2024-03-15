@@ -1,125 +1,120 @@
+/* CSS for Contact Section */
 
 .banner{
-    background-image: url("img/banner.png");
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 14px;
-    margin-top: 2px;
-    color: White;
+  background-image: url("img/banner.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+  margin-top: 2px;
+  color: White;
 
 }
 
 .contact-container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
 
-  }
-  
-  .contact-info {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
+.contact-info {
+  margin-right: 20px;
+}
+
+.contact-map-address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-map,
+.contact-address {
+  width: 100%; /* Adjusted width for responsiveness */
+  margin-right: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(195, 233, 255);
+}
+
+.contact-form {
+  width: 80%; /* Adjusted width for responsiveness */
+  max-width: 500px; /* Max width for larger screens */
+  padding: 40px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.email-sent {
+  color: green;
+  margin-top: 10px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-address p {
+  margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
   .contact-map-address {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+    flex-direction: column;
     align-items: center;
-    padding: 30px;
   }
-  
-  .contact-map,
-  .contact-address {
-    flex: 1;
-    margin-right: 20px;
-    text-align: center;
-    background-color: rgb(195, 233, 255);
-  }
-  
-  .contact-form {
-    flex: 1;
-    /* max-width: 80% */
-    width: 60%;
-    padding: 40px;
 
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
+  .contact-info,
+  .contact-map,
+  .contact-address,
+  .contact-form {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 100%;
   }
-  
-  .contact-form textarea {
-    height: 120px;
-  }
-  
-  .contact-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .email-sent {
-    color: green;
-    margin-top: 10px;
-  }
-  
-  .contact-map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .contact-address p {
-    margin-bottom: 10px;
-  }
-  
-  /* Media query for smaller screens */
-  @media (max-width: 768px) {
-    .contact-container {
-      flex-direction: column;
-    }
-  
-    .contact-map,
-    .contact-address {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .contact-form {
-      max-width: none;
-    }
-  }
-  
+}

@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import "./contact.css"; // Import your custom CSS file
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import banner from "./img/banner.png";
 import goo from "./img/google.png";
 import facebook from "./img/facebook.png";
 import linkdein from "./img/linkedin.png";
