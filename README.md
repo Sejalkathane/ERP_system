@@ -159,5 +159,5 @@ To use the Contact component:
 4. Use the provided map to locate the business address easily.
 
 
-##Author:
+## Author:
 ### Sejal Kathane
