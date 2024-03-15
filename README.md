@@ -2,9 +2,9 @@
 My ERP system is a comprehensive solution designed to streamline business operations by integrating various functions such as product and order management. With intuitive dashboards providing insights into key metrics, efficient product and order handling through dedicated components, and seamless communication via the Contact component, our ERP system empowers businesses to make informed decisions and enhance productivity.
 ### Fully Responsive
 
-####For Desktop
+#### For Desktop
 ![Screenshot 2024-03-15 180514](https://github.com/Sejalkathane/ERP_system/assets/93898954/7934c8f8-07cc-483b-8187-271406ff4c3f) 
-####For Mobile
+#### For Mobile
 ![Screenshot 2024-03-15 195255](https://github.com/Sejalkathane/ERP_system/assets/93898954/1186c4f6-8938-457a-b37d-f952fcc90888)
 
 
