@@ -63,6 +63,9 @@ The Dashboard component serves as the main interface of the application, providi
 - **Navbar:** Allows easy navigation to other sections of the application, providing a consistent user experience.
 - **Main Interface:** Displays various visualizations and statistics related to product and order management, such as distribution of products by category, orders by status, etc.
 
+![Screenshot 2024-03-15 181113](https://github.com/Sejalkathane/ERP_system/assets/93898954/9213eb9e-c166-40a4-9fe4-f6c9adee0774)
+
+
 ### Data Analysis and Flow Chart:
 1. **Distribution of Products by Category:** Illustrates the distribution of products across different categories.
 2. **Distribution of Orders by Status:** Displays the distribution of orders based on their status.
