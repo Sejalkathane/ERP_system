@@ -67,7 +67,7 @@ The Dashboard component serves as the main interface of the application, providi
 
 
 ### Data Analysis and Flow Chart:
-####Data is Real time Updated data if you make any changes in Product and Orders this chart also update.
+#### Data is Real time Updated data if you make any changes in Product and Orders this chart also update.
 1. **Distribution of Products by Category:** Illustrates the distribution of products across different categories.
 2. **Distribution of Orders by Status:** Displays the distribution of orders based on their status.
 3. **Distribution of No. of Orders by Month:** Graphically represents the number of orders placed each month over time.
